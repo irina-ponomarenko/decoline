@@ -269,6 +269,9 @@ button{
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
     display: block;
 }
+.gray-bg{
+    background-color: #e8e8e8;
+}
 
 /*--------------------header style------------------*/
 
@@ -300,6 +303,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .bottom-contact-header{
     padding: 30px 0 24px;
+    background-color: #ffffff;
 }
 .call-me,
 .email{
@@ -410,6 +414,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-size: 20px;
     line-height: normal;
 }
+
+/*---------------------Second section-------------*/
+
 .header-section{
     margin: 0 auto;
     text-align: center;
@@ -518,4 +525,119 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .container-variant .col-sm-6:last-child .variant-content .body-variant p{
     margin-right: 55px;
+}
+.white-bg{
+    background-color: #ffffff;
+}
+
+/*---------------------Third section------------------------*/
+
+.small-header{
+    background-color: #ffffff;
+    margin: 50px 50px 0;
+}
+.scale{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ffffff;
+}
+.scale img{
+    transition: 1s;
+    display: block;
+}
+.scale img:hover{
+    transform: scale(1.2);
+}
+.go-btn{
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0399e3;
+    color: #ffffff;
+    font-size: 20px;
+    border: 3px solid #0399e3;
+    padding: 7px 31px;
+    border-radius: 25px;
+    opacity: 0;
+    transition: .3s;
+}
+.text-title{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    white-space: pre-wrap;
+   
+}
+.wrapper-title-text{
+     position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    left: 0;
+    right: 0;
+}
+.scale:hover .go-btn{
+    transition: .3s;
+    opacity: 1;
+}
+.scale:hover .wrapper-title-text{
+    top: 0;
+    transform: translateY(0);
+    transition: .3s;
+    background-color: #0399e3;
+}
+.container-block-image .col-sm-3{
+    padding-left: 0;
+    padding-right: 0;
+    max-height: 306px;
+}
+.sub-title-header{
+    font-size: 18px;
+}
+.footer-catalog{
+    background-color: #ffffff;
+    margin: 0 50px;
+    padding: 45px 20px 20px;
+}
+.footer-catalog p{
+    text-align: center;
+    font-size: 18px;
+}
+
+/*---------------------Price section------------------------*/
+
+.header-white-section{
+    background-color: #ffffff;
+    margin: 50px 50px 0;
+}
+.block-price{
+    background-color: #ffffff;
+    margin: 0 50px;
+    padding: 0 59px 0;
+}
+.wrapper-content-block{
+    border: 3px solid #d1d1d1;
+    margin: 0 10px 40px 0;
+    padding: 35px;
+}
+.block-price .row .col-sm-6:last-child .wrapper-content-block{
+    margin-right: 0;
+}
+.img-wrapper-price{
+    margin-right: 30px;
+}
+.wrapper-content-block{
+    display: flex;
+    align-items: center;
+    height: 197px;
+}
+.about-best-price{
+    font-size: 20px;
+    font-weight: 500;
 }
