@@ -536,7 +536,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 
 .small-header{
     background-color: #ffffff;
-    margin: 50px 50px 0;
+    margin: 50px 45px 0;
 }
 .scale{
     display: inline-block;
@@ -1049,6 +1049,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .contact-footer .phone-block{
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .footer{
     width: 100%;
@@ -1129,7 +1131,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 100%;
 }
 .title-banner-basket{
-    font-size: 45px;
+    font-size: 60px;
     font-weight: bold;
     font-family: 'Roboto';
     color: #474747 !important;
@@ -1166,4 +1168,270 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .list-form-zayavka{
     display: flex;
     align-items: center;
+}
+.item-banner:first-child{
+    width: 55%;
+}
+.item-banner:last-child{
+    width: 40%;
+}
+.content-zayavka .oferta-click .custom-control-label::before, .content-zayavka .oferta-click .custom-control-label::after {
+    width: 1rem;
+    height: 1rem;
+    left: -1.5rem;
+}
+.content-zayavka .oferta-click .custom-control-label,
+.content-zayavka .oferta-click .custom-control-label a {
+    font-weight: 300;
+    font-size: 11px;
+    width: 100%;
+}
+.content-zayavka  .oferta-click {
+    padding-left: 1.5rem;
+    max-width: 100%;
+    margin-top: 15px;
+}
+.banner-btn{
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 8px 0;
+    width: 190px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    margin-top: 15px;
+}
+.banner-btn:hover{
+    transition: .3s;
+    background-color: transparent;
+    color: #000000;
+}
+.title-zayavka{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.bottom-banner-form-text{
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: normal;
+}
+.blue-block{
+    background-color: #008dd2;
+}
+.video-block{
+    background-color: #ffffff;
+    margin: 0 45px;
+    padding: 0 45px 45px;
+}
+.container-video,
+.container-video img{
+    max-width: 930px;
+    width: 100%;
+    max-height: 475px;
+    height: auto;
+}
+.video-header{
+    background-color: #ffffff;
+    margin: 0 45px ;
+}
+
+/*-----------------------tovar-----------------*/
+.container-list-tovar{
+    margin: 0 45px;
+}
+.container-block-tovar{
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    min-width: 232px;
+    cursor: pointer;
+}
+.container-block-tovar:hover{
+    transition: .3s;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(204,204,204,0.82);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(204,204,204,0.82);
+    box-shadow: 0px 0px 13px 0px rgba(204,204,204,0.82);
+}
+.img-tovar {
+   max-height: 132px;
+    height: auto;
+    overflow-y: hidden;
+}
+.img-tovar img{
+    width: 100%;
+    height: auto;
+}
+.title-container{
+    margin: 35px 0;
+}
+.title-tovar{
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 32px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.articul{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.to-top,
+.to-bottom{
+    display: block;
+    background-color: #dddddd;
+    padding: 2px;
+    border: 1px solid #c6c6c6;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.to-top:after,
+.to-bottom:after{
+    content: '';
+    position: absolute;
+    left: 1px;
+    right: 0px;
+    bottom: 0;
+    top: 3px;
+    background-image: url("../image/arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 12px;
+    height: 6px;
+}
+.to-bottom:after{
+    transform: rotate(180deg);
+    top: 4px;
+}
+.counter{
+    display: flex;
+}
+.input-counter{
+    border: 1px solid #c6c6c6;
+    width: 40px;
+    text-align: center;
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+}
+.container-my-tovar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+}
+.old-price{
+    font-size: 16px;
+    text-decoration: line-through;
+}
+.new-price{
+    font-size: 24px;
+    color: #f72f00;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.add-btn{
+    background-color: #008dd2;
+    padding: 8px 0;
+    border-radius: 8px;
+    width: 100%;
+    border: 2px solid #008dd2;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(3,175,255,0.55);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(3,175,255,0.55);
+    box-shadow: 0px 0px 14px 0px rgba(3,175,255,0.55);
+}
+.add-btn:hover{
+    background-color: #0c729f;
+     border: 2px solid #0c729f;
+    transition: .3s;
+}
+.add-btn span,
+.add-one-click-btn span{
+    position: relative;
+    padding-left: 45px;
+    color: #ffffff;
+    font-size: 14px;
+     font-weight: 500;
+}
+.add-one-click-btn span{
+    padding-left: 30px;
+    color: #f72f00;
+}
+.add-btn span:before{
+    content: '';
+    position: absolute;
+    background-image: url("../image/basket-white.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 24px;
+    left: 0;
+    top: -5px;
+}
+.group-btn-tovar button{
+    margin-top: 10px;
+}
+.add-one-click-btn{
+    padding: 8px 0;
+    border-radius: 8px;
+    width: 100%;
+    border: 2px solid #f72f00;
+}
+.add-one-click-btn:hover{
+    background-color: #f72f00;
+    transition: .3s;
+}
+.add-one-click-btn:hover span{
+    color: #ffffff;
+}
+.add-one-click-btn span:before{
+    content: '';
+    position: absolute;
+    background-image: url("../image/pay-click-red.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 21px;
+    height: 23px;
+    left: 0;
+    top: -3px;
+}
+.add-one-click-btn:hover span:before{
+    content: '';
+    position: absolute;
+    background-image: url("../image/pay-click.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 21px;
+    height: 23px;
+    left: 0;
+    top: -3px;
+}
+.section-tovar + section .container .small-header{
+    margin-top: 15px;
+}
+
+/*---------------map style---------------*/
+.ymaps-2-1-74-areas-pane,
+.ymaps-2-1-74-controls-pane,
+.ymaps-2-1-74-controls__bottom,
+.ymaps-2-1-74-controls__toolbar,
+.ymaps-2-1-74-events-pane,
+.ymaps-2-1-74-ground-pane,
+.ymaps-2-1-74-places-pane .ymaps-2-1-74-searchpanel-pane{
+    filter: grayscale(1) saturate(0) brightness(1) contrast(1) invert(1)!important;
+    -ms-filter: grayscale(1) saturate(0) brightness(1) contrast(1) invert(1) !important;
+    -webkit-filter: grayscale(1) saturate(0) brightness(1) contrast(1) invert(1) !important;
+    -moz-filter: grayscale(1) saturate(0) brightness(1) contrast(1) invert(1) !important;
+    -o-filter: grayscale(1) saturate(0) brightness(1) contrast(1) invert(1) !important;
 }
