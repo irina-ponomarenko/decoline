@@ -348,6 +348,9 @@
     .container-list-tovar .col-sm-3{
         min-width: 210px;
     }
+    .video-block{
+        margin: 0;
+    }
 }
 @media screen and (max-width: 736px) and (min-width: 320px) and (orientation: landscape){
     .block-price {
