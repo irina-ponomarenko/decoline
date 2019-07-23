@@ -143,6 +143,30 @@
     }
 
 }
+@media screen and (max-width: 990px) and (min-width: 320px){
+    .title-banner{
+        font-size: 59px;
+    }
+    .bottom-text-banner {
+        margin-top: 118px;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 28px;
+        display: block;
+    }
+    .tagline-text {
+        margin-top: 55px;
+        font-size: 28px;
+        max-width: 616px;
+        color: #ffffff;
+        line-height: normal;
+        font-weight: 300;
+    }
+    .green-block:last-child, .green-block:first-child {
+        max-width: 50px;
+        display: none;
+    }
+}
 @media screen and (max-width: 768px) and (min-width: 320px){
     .title-banner {
         max-width: 500px;
