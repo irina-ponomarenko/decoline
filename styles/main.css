@@ -354,29 +354,29 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 100%;
     height: auto;
     margin: 0 auto;
-    background: rgba(114,181,207,1);
-    background: -moz-linear-gradient(-45deg, rgba(114,181,207,1) 0%, rgba(1,31,90,1) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(114,181,207,1)), color-stop(100%, rgba(1,31,90,1)));
-    background: -webkit-linear-gradient(-45deg, rgba(114,181,207,1) 0%, rgba(1,31,90,1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(114,181,207,1) 0%, rgba(1,31,90,1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(114,181,207,1) 0%, rgba(1,31,90,1) 100%);
-    background: linear-gradient(135deg, rgba(114,181,207,1) 0%, rgba(1,31,90,1) 100%);
+    /*background: rgba(114,181,207,1);*/
+    /*background: -moz-linear-gradient(-45deg, rgba(114,181,207,1) 0%, rgba(1,31,90,1) 100%);*/
+    /*background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(114,181,207,1)), color-stop(100%, rgba(1,31,90,1)));*/
+    /*background: -webkit-linear-gradient(-45deg, rgba(114,181,207,1) 0%, rgba(1,31,90,1) 100%);*/
+    /*background: -o-linear-gradient(-45deg, rgba(114,181,207,1) 0%, rgba(1,31,90,1) 100%);*/
+    /*background: -ms-linear-gradient(-45deg, rgba(114,181,207,1) 0%, rgba(1,31,90,1) 100%);*/
+    /*background: linear-gradient(135deg, rgba(114,181,207,1) 0%, rgba(1,31,90,1) 100%);*/
     position: relative;
     z-index: 1;
 }
-.banner::after{
-    content: '';
-    background-image: url("../image/banner-after.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.5;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+/*.banner::after{*/
+/*    content: '';*/
+/*    background-image: url("../image/banner-after.jpg");*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    opacity: 0.5;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
 
-}
+/*}*/
 .banner .container{
     background-image: url("../image/banner.jpg");
     background-repeat: no-repeat;
