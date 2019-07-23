@@ -42,7 +42,7 @@
     <div class="bottom-contact-header">
        <div class="container">
            <div class="row  container-contact-block">
-               <div class="col-sm-6">
+               <div class="col-sm-5">
                    <div class="logo-container">
                        <a href="" class="home-link">
                            <img src="image/logo.png" class="logo">
@@ -55,7 +55,7 @@
                <div class="col-sm">
                    <a href="" class="call-me">Перезвоните мне</a>
                </div>
-               <div class="col-sm">
+               <div class="col-sm-3">
                    <div class="phone-block">
                        <a href="tel:+78 800 534-25-78">8 800 534-25-78</a>
                        <span class="info-call">Ежедневно с 9.00 до 21.00</span>
@@ -163,6 +163,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row container-variant">
             <div class="col-sm-6">
                 <div class="variant-content left-variant">
                     <div class="header-variant">
@@ -191,6 +193,8 @@
                     <img src="image/var-2.jpg" class="variant-img" alt="variant">
                 </div>
             </div>
+        </div>
+        <div class="row container-variant">
             <div class="col-sm-6">
                 <div class="img-variant">
                     <img src="image/var-3.jpg" class="variant-img" alt="variant">
@@ -220,14 +224,14 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
     </div>
 </section>
 <!-- End section variant -->
 
 <!-- Start section catalog -->
-<section>
+<section class="section-catalog">
     <div class="container">
         <div class="header-section small-header">
             <h2 class="title-section">КАТАЛОГ ТОВАРОВ</h2>
@@ -510,11 +514,6 @@
                 <h2 class="title-header-map">СХЕМА РАСПОЛОЖЕНИЯ ОПОРНЫХ СКЛАДОВ</h2>
             </div>
             <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=7f45fdea-134a-4bf3-a169-54e7b3c41943" type="text/javascript"></script>
-            <style>
-                html, body, #map {
-                    width: 100%; height: 600px; padding: 0; margin: 0;
-                }
-            </style>
         </div>
         <div id="map"></div>
         <div class="form-map">
@@ -528,6 +527,7 @@
             <div class="popup">
                 <div class="header-popup">
                     <h3 class="title-popup">ОБРАТНЫЙ ЗВОНОК</h3>
+                    <button type="button" class="close-popup"></button>
                 </div>
                 <form class="content-popup">
                     <ul class="list-form">
@@ -607,7 +607,7 @@
         </div>
     </div>
 </footer>
-
+<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 <!-- End footer -->
 
 <script src="js/jquery-3.4.1.js"></script>

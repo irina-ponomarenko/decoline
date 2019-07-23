@@ -181,6 +181,9 @@
     color: #525252;
     font-family: 'HelveticaNeueCyr' !important;
 }
+html, body, #map {
+    width: 100%; height: 600px; padding: 0; margin: 0;
+}
 body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -314,6 +317,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-size: 18px;
     text-decoration: underline;
 }
+.phone-block{
+    display: flex;
+    flex-direction: column;
+}
 .phone-block a{
     font-size: 20px;
     font-weight: bold;
@@ -324,6 +331,22 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .container-contact-block{
     align-items: center;
+    background-color: transparent !important;
+}
+.container-contact-block .navbar-nav .nav-item{
+    margin: 0 15px;
+}
+.container-contact-block .navbar-nav{
+    justify-content: space-between;
+    margin-left: 137px;
+    align-items: center;
+    width: 100%;
+}
+.bottom-contact-header .container{
+    display: flex;
+}
+.container-contact-block{
+    width: 100%;
 }
 
 /*---------------------first section banner--------------*/
@@ -792,6 +815,24 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     text-transform: uppercase;
     font-weight: 500;
     text-align: center;
+    position: relative;
+    padding-right: 20px;
+}
+.close-popup{
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    background-color: transparent;
+    border: none;
+    background: url("../image/close.png")no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+    opacity: 0.8;
+}
+.close-popup:hover{
+    transition: .3s;
+    opacity: 0.5;
 }
 .header-map{
     padding: 35px 0 15px;
@@ -954,6 +995,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #ffffff;
     font-weight: normal;
     font-size: 20px;
+    padding-right: 20px;
 }
 .map-input{
     width: 100%;
@@ -1073,6 +1115,30 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .license{
     text-align: center;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: rgba(202, 232, 255, 0.8);
+    color: #008dd2;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #e9ebec;
+}
+#back-to-top.show {
+    opacity: 1;
 }
 
 /*-------------------basket-----------------*/

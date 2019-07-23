@@ -16,40 +16,42 @@
 <header>
     <div class="bottom-contact-header">
        <div class="container">
-           <div class="row  container-contact-block">
-               <div class="col-sm-4">
-                   <div class="logo-container">
-                       <a href="" class="home-link">
-                           <img src="image/logo.png" class="logo">
-                       </a>
-                   </div>
+           <nav class="navbar navbar-expand-lg navbar-light bg-light container-contact-block">
+               <div class="logo-container">
+                   <a href="" class="home-link">
+                       <img src="image/logo.png" class="logo">
+                   </a>
                </div>
-               <div class="col-sm">
-                   <a href="" class="call-me">Перезвоните мне</a>
-               </div>
-               <div class="col-sm">
-                   <div class="phone-block">
-                       <a href="tel:+78 800 534-25-78">8 800 534-25-78</a>
-                       <span class="info-call">Ежедневно с 9.00 до 21.00</span>
-                   </div>
-               </div>
-               <div class="col-sm">
-                   <span class="email">info@decoline24.ru</span>
-               </div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
 
-               <div class="col-sm">
-                   <div class="basket">
-                       <div class="basket-block">
-                           <span class="basket-icon"></span>
-                           <span class="count">1</span>
-                       </div>
-                       <div class="text-your-basket">
-                           <span class="summa">Сумма:</span>
-                           <span class="summa-number">2 250 руб</span>
-                       </div>
-                   </div>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav mr-auto">
+                       <li class="nav-item">
+                           <a href="" class="call-me">Перезвоните мне</a>
+                       </li>
+                       <li class="nav-item">
+                           <div class="phone-block">
+                               <a href="tel:+78 800 534-25-78">8 800 534-25-78</a>
+                               <span class="info-call">Ежедневно с 9.00 до 21.00</span>
+                           </div>
+                       </li>
+                       <li class="nav-item">
+                           <span class="email">info@decoline24.ru</span>
+                       </li>
+                   </ul>
                </div>
-
+           </nav>
+           <div class="basket">
+               <div class="basket-block">
+                   <span class="basket-icon"></span>
+                   <span class="count">1</span>
+               </div>
+               <div class="text-your-basket">
+                   <span class="summa">Сумма:</span>
+                   <span class="summa-number">2 250 руб</span>
+               </div>
            </div>
        </div>
     </div>
@@ -584,7 +586,7 @@
 <!-- End section price tovar -->
 
 <!-- Start section catalog -->
-<section>
+<section class="section-catalog">
     <div class="container">
         <div class="header-section small-header">
             <h2 class="title-section">КАТАЛОГ ТОВАРОВ</h2>
@@ -867,11 +869,6 @@
                 <h2 class="title-header-map">СХЕМА РАСПОЛОЖЕНИЯ ОПОРНЫХ СКЛАДОВ</h2>
             </div>
             <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=7f45fdea-134a-4bf3-a169-54e7b3c41943" type="text/javascript"></script>
-            <style>
-                html, body, #map {
-                    width: 100%; height: 600px; padding: 0; margin: 0;
-                }
-            </style>
         </div>
         <div id="map"></div>
         <div class="form-map">
@@ -885,6 +882,7 @@
             <div class="popup">
                 <div class="header-popup">
                     <h3 class="title-popup">ОБРАТНЫЙ ЗВОНОК</h3>
+                    <button type="button" class="close-popup"></button>
                 </div>
                 <form class="content-popup">
                     <ul class="list-form">
@@ -964,7 +962,7 @@
         </div>
     </div>
 </footer>
-
+<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 <!-- End footer -->
 
 <script src="js/jquery-3.4.1.js"></script>

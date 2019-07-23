@@ -101,8 +101,18 @@ ymaps.ready(function () {
         });
         myPlacemarkWithContent2 = new ymaps.Placemark([59.84868756428404,30.457774999999945], {
             hintContent: 'ул. Грибакиных, 27, Санкт-Петербург',
-            balloonContent: 'Станция метро; </br>\n' +
-                'ул. Грибакиных, 27, Санкт-Петербург',
+            balloonContent: '<div class="map-marker-info">\n' +
+                '            <div class="header-marker">\n' +
+                '                <h3 class="title-marker">Санкт-Петербург</h3>\n' +
+                '            </div>\n' +
+                '            <div class="content-body-marker">\n' +
+                '                <div class="image-marker">\n' +
+                '                    <img src="image/map-country4.jpg" alt="country">\n' +
+                '                </div>\n' +
+                '                <p class="map-info-marker">Станция метро; </br>\n' +
+                'ул. Грибакиных, 27, Санкт-Петербург</p>\n' +
+                '            </div>\n' +
+                '        </div>',
             iconContent: ''
         }, {
             // Опции.
