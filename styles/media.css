@@ -185,7 +185,7 @@
         padding: 33px 0 15px;
     }
     .variant-img {
-        width: auto;
+        width: 100%;
         max-width: inherit;
     }
     .container-variant .col-sm-6 {
@@ -204,7 +204,7 @@
         flex-direction: column-reverse;
     }
     .container-block-image .col-sm-3{
-        min-width: 285px;
+        max-width: 285px;
     }
     .container-block-image{
         justify-content: center;
@@ -247,7 +247,7 @@
         align-items: center;
     }
     .transfer-img-wrapper img{
-        width: auto;
+        width: 100%;
         max-width: 561px;
     }
     .decoline-section .row .col-sm-6{
