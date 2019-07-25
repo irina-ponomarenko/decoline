@@ -11,6 +11,7 @@ ymaps.ready(function () {
             '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
         ),
 
+
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
             hintContent: 'Москва',
             balloonContent: '<div class="map-marker-info">\n' +
@@ -130,6 +131,15 @@ ymaps.ready(function () {
             // Макет содержимого.
             iconContentLayout: MyIconContentLayout
         });
+
+    //отключаем зум колёсиком мышки
+    myMap.behaviors.disable('scrollZoom');
+
+// //на мобильных устройствах... (проверяем по userAgent браузера)
+//     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+//         //... отключаем перетаскивание карты
+//         myMap.behaviors.disable('drag');
+//     }
 
     myMap.geoObjects
         .add(myPlacemark)
