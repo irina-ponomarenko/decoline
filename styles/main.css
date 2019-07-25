@@ -578,7 +578,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     left: 50%;
     transform: translateX(-50%);
     background-color: #0399e3;
-    color: #ffffff;
+    color: #ffffff !important;
     font-size: 20px;
     border: 3px solid #0399e3;
     padding: 7px 31px;
@@ -588,6 +588,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     -webkit-box-shadow: 0px 0px 14px 0px rgba(3,175,255,0.55);
     -moz-box-shadow: 0px 0px 14px 0px rgba(3,175,255,0.55);
     box-shadow: 0px 0px 14px 0px rgba(3,175,255,0.55);
+}
+.go-btn:hover{
+    color: #ffffff !important;
 }
 .text-title{
     color: #ffffff;
