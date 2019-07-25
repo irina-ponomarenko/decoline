@@ -503,14 +503,15 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     border: 3px solid #008dd2;
     font-size: 18px;
     text-transform: uppercase;
-    color: #008dd2;
+    color: #008dd2 !important;
     padding: 10px 20px;
     font-weight: 500;
+    display: block;
 }
 .more-info-btn:hover{
     transition: .3s;
     background-color: #008dd2;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 .variant-content{
     padding: 20px 30px;
