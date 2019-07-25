@@ -356,7 +356,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     margin: 0 auto;
     position: relative;
     background-image: url("../image/banner-after.jpg");
-   background-size: contain;
+   background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
     background-position: center;
@@ -571,6 +571,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .scale img:hover{
     transform: scale(1.2);
+    filter: brightness(120%);
 }
 .go-btn{
     position: absolute;
@@ -592,6 +593,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .go-btn:hover{
     color: #ffffff !important;
+    background-color: #008dd2;
+    border: 3px solid #008dd2;
 }
 .text-title{
     color: #ffffff;
@@ -1083,11 +1086,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .wrapper-footer-logo{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 .footer-logo-info{
     max-width: 220px;
     width: 100%;
+    font-size: 18px;
     margin-left: 15px;
 }
 .contact-footer .phone-block{
@@ -1193,9 +1197,25 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #000000;
     font-weight: bold;
 }
+.banner-basket{
+    background-image: url("../image/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
 .img-banner-basket img{
     max-width: 520px;
     width: 100%;
+}
+.content-banner-basket .row{
+    justify-content: flex-end;
+}
+.content-banner-basket{
+    padding-bottom: 20px;
+}
+.content-banner-basket .row .col-sm{
+    max-width: 50%;
+    align-self: flex-end;
 }
 .title-banner-basket{
     font-size: 60px;
@@ -1303,6 +1323,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .video-header{
     background-color: #ffffff;
     margin: 0 45px ;
+}
+.non-desctope{
+    display: none;
 }
 
 /*-----------------------tovar-----------------*/

@@ -14,6 +14,31 @@
 <!-- Start header -->
 
 <header>
+    <div class="top-menu-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" id="menu">
+                        <li class="nav-item nav-item-top">
+                            <a class="nav-link" href="#catalog">Каталоги <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item nav-item-top">
+                            <a class="nav-link" href="#whyWe">Почему мы</a>
+                        </li>
+                        <li class="nav-item nav-item-top">
+                            <a class="nav-link" href="#sxema">Схема работы</a>
+                        </li>
+                        <li class="nav-item nav-item-top">
+                            <a class="nav-link" href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
     <div class="bottom-contact-header">
        <div class="container">
            <nav class="navbar navbar-expand-lg navbar-light bg-light container-contact-block">
@@ -62,10 +87,10 @@
 
 <section>
     <div class="banner-basket">
-        <div class="container">
+        <div class="container-fluid">
             <div class="content-banner-basket">
                 <div class="row">
-                    <div class="col-sm">
+                    <div class="col-sm non-desctope">
                         <div class="img-banner-basket">
                             <img src="image/banner-basket.jpg" alt="banner basket">
                         </div>
@@ -102,7 +127,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row container-green-block">
             <div class="col-sm green-block blue-block"></div> <!--Пустая ячейка по дизайну -->
             <div class="col-sm green-block blue-block">
@@ -148,7 +173,7 @@
 
 <!-- Start section video -->
 
-<section>
+<section id="video">
     <div class="container">
         <div class="header-section video-header">
             <h2 class="title-section">ВИДЕООБЗОР МЕБЕЛЬНОЙ ФУРНИТУРЫ</h2>
@@ -586,7 +611,7 @@
 <!-- End section price tovar -->
 
 <!-- Start section catalog -->
-<section class="section-catalog">
+<section class="section-catalog" id="catalog">
     <div class="container">
         <div class="header-section small-header">
             <h2 class="title-section">КАТАЛОГ ТОВАРОВ</h2>
@@ -735,7 +760,7 @@
 <!-- End section catalog -->
 
 <!-- Start section price -->
-<section>
+<section id="whyWe">
     <div class="container">
          <div class="header-section header-white-section">
             <h2 class="title-section">ПОЧЕМУ У НАС ЛУЧШИЕ ЦЕНЫ? </h2>
@@ -819,7 +844,7 @@
 <!-- End section decoline -->
 
 <!-- Start section contact form -->
-<section>
+<section id="call">
     <div class="container">
          <form class="contact-form">
             <div class="row">
@@ -862,7 +887,7 @@
 
 <!-- Start section map -->
 
-<section>
+<section id="contact">
     <div class="map-content">
         <div class="container">
             <div class="header-map">
@@ -934,21 +959,21 @@
                     </div>
                     <div class="col-sm">
                         <div class="wrapper-list-footer-contact">
-                            <ul class="footer-contact-list">
+                            <ul class="footer-contact-list" id="menu2">
                                 <li class="item-contact">
-                                    <a href="" class="link-contact">Каталог товаров</a>
+                                    <a href="#catalog" class="link-contact">Каталог товаров</a>
                                 </li>
                                 <li class="item-contact">
-                                    <a href="" class="link-contact">Варианты сотрудничества</a>
+                                    <a href="#video" class="link-contact">Видеообзор</a>
                                 </li>
                                 <li class="item-contact">
-                                    <a href="" class="link-contact">Почему мы</a>
+                                    <a href="#whyWe" class="link-contact">Почему мы</a>
                                 </li>
                                 <li class="item-contact">
-                                    <a href="" class="link-contact">Контакты</a>
+                                    <a href="#contact" class="link-contact">Контакты</a>
                                 </li>
                                 <li class="item-contact">
-                                    <a href="" class="link-contact">Заказать обратный звонок</a>
+                                    <a href="#call" class="link-contact">Заказать обратный звонок</a>
                                 </li>
                             </ul>
                         </div>
