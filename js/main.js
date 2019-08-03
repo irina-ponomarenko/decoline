@@ -1,4 +1,15 @@
 $(document).ready(function() {
+
+       /*-------------fixed header---------------------*/
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){
+            $('.header').addClass("fixed");
+            $('body').addClass("active-header");
+        } else{
+            $('.header').removeClass("fixed");
+            $('body').removeClass("active-header");
+        }
+    });
     /*---------------------------маска на ввод---------------*/
     $("#phone").mask("+7 (999) 999-9999");
     $("#phone1").mask("+7 (999) 999-9999");
@@ -63,6 +74,13 @@ $(document).ready(function() {
     /*-------------------scroll to section--------*/
 
     $("#menu").on("click","a", function (event) {
+        event.preventDefault(); //опустошим стандартную обработку
+        var id  = $(this).attr('href'), //заберем айдишник блока с параметром URL
+            top = $(id).offset().top; //определим высоту от начала страницы до якоря
+        $('body,html').animate({scrollTop: top}, 1500); //сделаем прокрутку за 1 с
+    });
+
+    $("#menu-m").on("click","a", function (event) {
         event.preventDefault(); //опустошим стандартную обработку
         var id  = $(this).attr('href'), //заберем айдишник блока с параметром URL
             top = $(id).offset().top; //определим высоту от начала страницы до якоря

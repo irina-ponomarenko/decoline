@@ -13,7 +13,7 @@
 
 <!-- Start header -->
 
-<header>
+<header class="header">
     <div class="top-menu-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
@@ -23,13 +23,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav" id="menu">
                         <li class="nav-item nav-item-top">
+                            <a class="nav-link" href="">Главная</a>
+                        </li>
+                        <li class="nav-item nav-item-top">
                             <a class="nav-link" href="#catalog">Каталоги <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item nav-item-top">
                             <a class="nav-link" href="#whyWe">Почему мы</a>
-                        </li>
-                        <li class="nav-item nav-item-top">
-                            <a class="nav-link" href="#sxema">Схема работы</a>
                         </li>
                         <li class="nav-item nav-item-top">
                             <a class="nav-link" href="#contact">Контакты</a>
@@ -40,46 +40,69 @@
         </div>
     </div>
     <div class="bottom-contact-header">
-       <div class="container">
-           <nav class="navbar navbar-expand-lg navbar-light bg-light container-contact-block">
-               <div class="logo-container">
+        <div class="container">
+            <div class="header-container-bottom">
+              <div class="logo-container">
                    <a href="" class="home-link">
                        <img src="image/logo.png" class="logo">
                    </a>
                </div>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-               </button>
-
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class="navbar-nav mr-auto">
-                       <li class="nav-item">
-                           <a href="" class="call-me">Перезвоните мне</a>
-                       </li>
-                       <li class="nav-item">
-                           <div class="phone-block">
-                               <a href="tel:+78 800 534-25-78">8 800 534-25-78</a>
-                               <span class="info-call">Ежедневно с 9.00 до 21.00</span>
+               <ul class="mr-auto-list">
+                   <li class="nav-item-mr">
+                       <a href="" class="call-me">Перезвоните мне</a>
+                   </li>
+                   <li class="nav-item-mr">
+                       <div class="phone-block mobile-none">
+                           <a href="tel:+78 800 534-25-78">8 800 534-25-78</a>
+                           <span class="info-call">Ежедневно с 9.00 до 21.00</span>
+                       </div>
+                   </li>
+                   <li class="nav-item-mr">
+                       <span class="email">info@decoline24.ru</span>
+                   </li>
+                   <li class="nav-item-mr">
+                        <div class="basket">
+                            <div class="basket-block">
+                               <span class="basket-icon"></span>
+                               <span class="count">1</span>
                            </div>
-                       </li>
-                       <li class="nav-item">
-                           <span class="email">info@decoline24.ru</span>
-                       </li>
-                   </ul>
-               </div>
-           </nav>
-           <div class="basket">
-               <div class="basket-block">
-                   <span class="basket-icon"></span>
-                   <span class="count">1</span>
-               </div>
-               <div class="text-your-basket">
-                   <span class="summa">Сумма:</span>
-                   <span class="summa-number">2 250 руб</span>
-               </div>
-           </div>
-       </div>
-    </div>
+                           <div class="text-your-basket">
+                               <span class="summa">Сумма:</span>
+                               <span class="summa-number">2 250 руб</span>
+                           </div>
+                        </div>
+                   </li>
+               </ul>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent mobile-version">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" id="menu-m">
+                            <li class="nav-item nav-item-top">
+                                <a class="nav-link" href="">Главная</a>
+                            </li>
+                            <li class="nav-item nav-item-top">
+                                <a class="nav-link" href="#catalog">Каталоги <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item nav-item-top">
+                                <a class="nav-link" href="#whyWe">Почему мы</a>
+                            </li>
+                            <li class="nav-item nav-item-top">
+                                <a class="nav-link" href="#contact">Контакты</a>
+                            </li>
+                             <li class="nav-item nav-item-top">
+                                <div class="phone-block tovar-phone">
+                                   <a href="tel:+78 800 534-25-78">8 800 534-25-78</a>
+                                   <span class="info-call">Ежедневно с 9.00 до 21.00</span>
+                               </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+   </div>
 </header>
 <!-- End header -->
 
@@ -604,6 +627,9 @@
                         </div>
                     </div>
                 </div>
+                 <button type="button" class="to-more">
+                    <span class="more-btn-text">ПОКАЗАТЬ ЕЩЁ</span>
+                </button>
             </div>        
         </div>
     </div>
@@ -896,36 +922,6 @@
             <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=7f45fdea-134a-4bf3-a169-54e7b3c41943" type="text/javascript"></script>
         </div>
         <div id="map"></div>
-        <div class="form-map">
-            <div class="popup_toggle">
-                <div class="circlephone"></div>
-                <div class="circle-fill" style="transform-origin: center;"></div>
-                <div class="img-circle">
-                    <button type="button" class="form-btn"></button>
-                </div>
-            </div>
-            <div class="popup">
-                <div class="header-popup">
-                    <h3 class="title-popup">ОБРАТНЫЙ ЗВОНОК</h3>
-                    <button type="button" class="close-popup"></button>
-                </div>
-                <form class="content-popup">
-                    <ul class="list-form">
-                        <li class="item-form">
-                            <input type="text" name="youName" class="map-input" placeholder="Имя">
-                        </li>
-                        <li class="item-form">
-                            <input type="text" name="youNumber" id="phone" class="map-input" placeholder="+7 (___) ___-__-__">
-                        </li>
-                    </ul>
-                    <div class="custom-control custom-checkbox oferta-click">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">Я СОГЛАСЕН С <a href="" class="dogovor">УСЛОВИЯМИ ПУБЛИЧНОЙ ОФЕРТЫ</a> Я СОГЛАСЕН НА ОБРАБОТКУ МОИХ ПЕРСОНАЛЬНЫХ ДАННЫХ. <a href="" class="dogovor">ПОЛИТИКА.</a></label>
-                    </div>
-                    <button type="submit" class="popup-btn-form">Жду звонка</button>
-                </form>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -960,11 +956,11 @@
                     <div class="col-sm">
                         <div class="wrapper-list-footer-contact">
                             <ul class="footer-contact-list" id="menu2">
-                                <li class="item-contact">
-                                    <a href="#catalog" class="link-contact">Каталог товаров</a>
+                                 <li class="item-contact">
+                                    <a href="" class="link-contact">Главная</a>
                                 </li>
                                 <li class="item-contact">
-                                    <a href="#video" class="link-contact">Видеообзор</a>
+                                    <a href="#catalog" class="link-contact">Каталог товаров</a>
                                 </li>
                                 <li class="item-contact">
                                     <a href="#whyWe" class="link-contact">Почему мы</a>
@@ -987,6 +983,38 @@
         </div>
     </div>
 </footer>
+
+
+<div class="form-map">
+    <div class="popup_toggle">
+        <div class="circlephone"></div>
+        <div class="circle-fill" style="transform-origin: center;"></div>
+        <div class="img-circle">
+            <button type="button" class="form-btn"></button>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="header-popup">
+            <h3 class="title-popup">ОБРАТНЫЙ ЗВОНОК</h3>
+            <button type="button" class="close-popup"></button>
+        </div>
+        <form class="content-popup">
+            <ul class="list-form">
+                <li class="item-form">
+                    <input type="text" name="youName" class="map-input" placeholder="Имя">
+                </li>
+                <li class="item-form">
+                    <input type="text" name="youNumber" id="phone" class="map-input" placeholder="+7 (___) ___-__-__">
+                </li>
+            </ul>
+            <div class="custom-control custom-checkbox oferta-click">
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">Я СОГЛАСЕН С <a href="" class="dogovor">УСЛОВИЯМИ ПУБЛИЧНОЙ ОФЕРТЫ</a> Я СОГЛАСЕН НА ОБРАБОТКУ МОИХ ПЕРСОНАЛЬНЫХ ДАННЫХ. <a href="" class="dogovor">ПОЛИТИКА.</a></label>
+            </div>
+            <button type="submit" class="popup-btn-form">Жду звонка</button>
+        </form>
+    </div>
+</div>
 <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 <!-- End footer -->
 
