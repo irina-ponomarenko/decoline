@@ -232,7 +232,10 @@
         display: block;
         text-align: right;
         padding: .5rem 0;
-        min-width: 75px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
     }
     .top-menu-header{
         display: none;
@@ -245,6 +248,7 @@
     }
     .header-container-bottom{
         align-items: flex-start;
+        padding-right: 50px;
     }
     .title-banner{
         font-size: 52px;
@@ -402,6 +406,88 @@
     .container-list-tovar .col-sm-3{
         min-width: 200px;
     }
+    .mobile-contact .nav-item-top .email{
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        color: #354550 !important;
+        font-size: 18px;
+    }
+    .mobile-contact .nav-item-top .phone-block{
+        text-align: center;
+    }
+    .mobile-contact .nav-item-top .phone-block a{
+        color: #363636 !important;
+    }
+    .mobile-contact .nav-item-top{
+        margin-top: 10px;
+    }
+    .gray-bg{
+        position: relative;
+    }
+    .mobile-menu{
+        background-color: #ffff;
+        position: absolute;
+        z-index: 10000;
+        left: 0;
+        right: 0;
+        top: 84px;
+        padding-bottom: 20px;
+        display: none;
+    }
+    .nav-link{
+        text-align: center;
+        color: #008ed5 !important;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .navbar-list-mob{
+        padding: 20px 0;
+        border-top: 1px solid #a1a1a1;
+        border-bottom: 1px solid #a1a1a1;
+    }
+    .mobile-contact{
+        margin: 20px 0;
+    }
+    .chevron-right{
+        display: none;
+        color: #ffffff;
+        margin-left: 5px;
+    }
+    .nav-item-top:hover{
+        transition: .3s;
+        background-color: #008ed5;
+    }
+    .nav-item-top:hover .nav-link{
+        color: #ffffff !important;
+        transition: .3s;
+    }
+    .nav-item-top:hover .nav-link .chevron-right{
+        display: inline-block;
+        transition: .3s;
+    }
+    .navbar-btn-toggle{
+        border: none;
+        background: url("../image/burgerIcon.png")no-repeat;
+        background-size: contain;
+        width: 45px;
+        height: 45px;
+
+    }
+    .mobile-none{
+        display: none;
+    }
+    .navbar-btn-toggle{
+        right: 29px;
+        position: relative;
+        top: 12px;
+    }
+    .close-btn{
+        background: url("../image/close-btn.png")no-repeat;
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+    }
 }
 @media screen and (max-width: 950px) and (min-width: 320px){
     .logo-container,
@@ -421,6 +507,9 @@
     .title-banner {
         max-width: 500px;
         font-size: 55px;
+    }
+    .mobile-menu{
+        top: 80px;
     }
     .container-list-tovar .row{
         justify-content: center;
@@ -768,6 +857,10 @@
     }
 }
 @media screen and (max-width: 574px) and (min-width: 320px){
+    .header-container-bottom {
+        align-items: flex-start;
+        padding-right: 70px;
+    }
     .green-block{
         margin-right: 0;
     }
@@ -879,7 +972,7 @@
         width: 100%;
     }
     .phone-block a {
-        font-size: 14px;
+        font-size: 18px;
         font-weight: bold;
     }
     .basket-block{
@@ -894,7 +987,7 @@
         font-size: 10px;
     }
     .info-call {
-        font-size: 8px;
+        font-size: 11px;
         color: #999898;
     }
 }
@@ -920,6 +1013,30 @@
     }
     .mr-auto-list{
         margin-top: 6px;
+    }
+    .mobile-version{
+        height: 100vh;
+    }
+    .mobile-menu{
+       bottom: 0;
+    }
+    .white-menu{
+        background-color: #ffffff;
+    }
+    .nav-link{
+        text-align: left;
+        padding-left: 20px;
+    }
+    .mobile-contact .nav-item-top .phone-block,
+    .mobile-contact .nav-item-top .info-call {
+        text-align: left;
+    }
+    .mobile-contact .nav-item-top .phone-block{
+        margin-left: 20px;
+    }
+    .mobile-contact .nav-item-top .email{
+        text-align: left;
+        margin-left: 20px;
     }
     .phone-block.tovar-phone{
         display: flex;

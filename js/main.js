@@ -93,4 +93,16 @@ $(document).ready(function() {
             top = $(id).offset().top; //определим высоту от начала страницы до якоря
         $('body,html').animate({scrollTop: top}, 1500); //сделаем прокрутку за 1 с
     });
+
+    $(".navbar-btn-toggle").on('click', function () {
+        $(this).toggleClass("close-btn");
+        $(this).closest('.mobile-version').toggleClass("white-menu");
+       $(".mobile-menu").slideToggle(500);
+    });
+
+    $('.mobile-version .nav-link').on('click', function () {
+       $(this).closest('.mobile-menu').slideToggle(500);
+        $(this).closest('.mobile-version').removeClass("white-menu");
+        $(this).closest('.mobile-version').find(".navbar-btn-toggle").removeClass("close-btn");
+    });
 });
