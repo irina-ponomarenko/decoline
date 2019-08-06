@@ -1640,3 +1640,169 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .active-header{
     padding-top: 114px;
 }
+
+/*-------------------basket------------------*/
+.basket-header{
+    width: 100%;
+    background-color: #008dd2;
+    padding: 10px;
+}
+.title-basket{
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.step-1{
+    padding: 25px;
+    background-color: #ffffff;
+    margin: 30px 0;
+}
+.img-container-tovar img{
+    max-width: 150px;
+    width: 100%;
+}
+.articul-title{
+    color: #474747;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.articul-container,
+.price-tovar{
+    max-width: 200px;
+    width: 100%;
+}
+.name-articul,
+.name-articul span{
+    font-size: 16px;
+    color: #898989;
+    text-transform: uppercase;
+}
+.body-basket tr td{
+    vertical-align: middle;
+}
+.price{
+    font-size: 24px;
+    font-weight: 500;
+    color: #555555;
+}
+.goods,
+.result-summa{
+    font-size: 24px;
+    font-weight: 500;
+    color: #008dd2;
+}
+.delete-row{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: url("../image/delete.png")no-repeat;
+    background-size: 100% 100%;
+    border: none;
+}
+.delete-row:hover{
+    background: url("../image/delete-nav.png")no-repeat;
+    background-size: 100% 100%;
+}
+.title-footer-table{
+    color: #383838;
+    font-size: 20px;
+}
+.title-footer-table span{
+    color: #008dd2;
+}
+.table-basket th{
+    white-space: nowrap;
+}
+.table-basket th,
+.table-basket thead th{
+    font-size: 18px;
+    border: none;
+}
+.table-basket td{
+    border: none;
+}
+.table-basket tr,
+.basket-footer tr{
+    border-top: 1px solid #bababa;
+}
+.table-basket thead tr{
+    border-top: none;
+}
+.basket-btn{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #008dd2;
+}
+.basket-btn:first-child{
+    margin-right: 20px;
+}
+.footer-basket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.back-btn{
+    background-color: #008dd2;
+}
+.back-btn span{
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+    padding-left: 20px;
+}
+.back-btn span:before{
+    content: '';
+    background: url("../image/arrow-basket.png")no-repeat;
+    width: 15px;
+    height: 13px;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.back-btn:hover{
+    border: 1px solid #191919;
+    background-color: #191919;
+}
+.next-btn{
+    background-color: #ffffff;
+}
+.next-btn span{
+    font-size: 18px;
+    color: #008dd2;
+    position: relative;
+    padding-right: 20px;
+}
+.next-btn span:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 15px;
+    height: 13px;
+    background: url("../image/arrow-basket-hover.png")no-repeat;
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%)scale(-1, 1);
+}
+
+.next-btn:hover{
+    background-color: #008dd2;
+}
+.next-btn:hover span{
+    color: #ffffff;
+}
+.next-btn:hover span:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 15px;
+    height: 13px;
+    background: url("../image/arrow-basket.png")no-repeat;
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%)scale(-1, 1);
+}

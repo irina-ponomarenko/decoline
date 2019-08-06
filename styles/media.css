@@ -858,7 +858,7 @@
 }
 @media screen and (max-width: 574px) and (min-width: 320px){
     .header-container-bottom {
-        align-items: flex-start;
+        align-items: center;
         padding-right: 70px;
     }
     .green-block{
