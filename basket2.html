@@ -213,17 +213,96 @@
                     </table>
                 </div>
             </div>
-            <footer class="footer-basket">
-                <button type="button" class="basket-btn back-btn">
-                    <span>ПРОДОЛЖИТЬ ПОКУПКИ</span>
-                </button>
-                <button type="submit" class="basket-btn next-btn">
-                    <span>ОФОРМИТЬ ЗАКАЗ</span>
+            <div class="step-2">
+                <div class="block-step-2">
+                    <h2 class="title-step">КОНТАКТНЫЕ ДАННЫЕ</h2>
+                    <ul class="list-form-step">
+                        <li class="item-form">
+                            <input type="text" name="name" class="input-form" placeholder="Ваше имя*" required/>
+                        </li>
+                        <li class="item-form">
+                            <input type="text" name="sername" class="input-form" placeholder="Фамилия*" required/>
+                        </li>
+                        <li class="item-form">
+                            <input type="text" name="phone" class="input-form" placeholder="Телефон*" required/>
+                        </li>
+                        <li class="item-form">
+                            <input type="email" name="email" class="input-form" placeholder="E-Mail"/>
+                        </li>
+                    </ul>
+                    <span class="info-form-input">*-Поля обязательные для заполнения</span>
+                    <div class="block-form">
+                        <h2 class="title-step">ДОСТАВКА</h2>
+                        <div class="masonry">
+                            <ul class="tabs">
+                                <li class="tab-link current" data-tab="tab-1">
+                                    <a href="#tab1" class="tabs-btn left-btn">
+                                        <div class="header-tabs">
+                                            <label class="container-radio">Доставка
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="tab-link" data-tab="tab-2">
+                                    <a href="#tab2" class="tabs-btn right-btn">
+                                        <div class="header-tabs">
+                                            <label class="container-radio">Самовывоз из магазина, бесплатно
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab_container">
+                                <div id="tab-1" class="tab-content current">
+                                    <div class="content-dostavka">
+                                        <a href="" class="city">Санкт-Петербург</a>
+                                        <input type="text" name="adress" class="input-form" placeholder="Улица, дом, квартира">
+                                        <span class="info-dostavka">Доставка курьером в пределах г. Санкт-Петербург</span>
+                                    </div>
+                                </div>
+                                <div id="tab-2" class="tab-content">
+                                    <div class="content-dostavka">
+                                        <a href="" class="city">Санкт-Петербург <span class="add-city"></span></a>
+                                        <div class="container-add-info">
+                                            <p class="info-add">Выберите пункт, из которого будет осуществлен самовывоз</p>
+                                            <button type="button" class="add-punkt">Выбрать пункт</button>
+                                        </div>
+                                        <span class="info-dostavka">Cрок хранения заказа в пункте выдачи 3 дня</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-about-you-order">
+                            <h2 class="title-step">ИНФОРМАЦИЯ О ЗАКАЗЕ</h2>
+                            <div class="info-order">
+                                <div class="you-comment">
+                                    <h4 class="comment-title">Комментарий к заказу</h4>
+                                    <textarea class="comment" placeholder="Удобное время доставки, способ оплаты и другие пожелания по заказу"></textarea>
+                                </div>
+                                <div class="oferta">
+                                    <p>Нажимая кнопку “Заказать” вы принимаете условия </p>
+                                    <a href="" class="link-oferta">Публичной оферты.</a>
+                                    <p>Ваш заказ будет обработан в течении 1 часа ежедневно с 09 до 22:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <footer class="footer-basket footer-step-2">
+                <button type="submit" class="basket-btn zakaz-btn">
+                    <span>ЗАКАЗАТЬ</span>
                 </button>
             </footer>
 
         </div>
     </form>
+
 </section>
 
 <!-- End basket -->
@@ -286,6 +365,49 @@
 </footer>
 <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 <!-- End footer -->
+
+<div class="popup-order punkt-order">
+    <button type="button" class="close-popup-btn"></button>
+    <div class="about-punkt">
+        <div class="header-popup-block">
+            <h2 class="title-popup-text">ВЫБЕРИТЕ ПУНКТ ВЫДАЧИ</h2>
+        </div>
+        <div class="adress-punkt">
+            <p class="text-adress">Химиков, 26, 1 этаж, центральный зал</p>
+            <span class="week-shedule">ПН-ПТ 9:00-18:00; СБ-ВС 11:00-18:00</span>
+        </div>
+        <div class="adress-punkt">
+            <a href="" class="link-map">шоссе Митрофаньевское, д.8А, лит.Б, помещение 13</a>
+            <span class="metro">Балтийская</span>
+            <span class="week-shedule">ПН-ПТ 9:00-18:00; СБ-ВС 11:00-18:00</span>
+            <button type="button" class="add-punkt-map">Выбрать пункт</button>
+        </div>
+    </div>
+    <div class="map-wrapper">
+        <img src="image/map.jpg">
+    </div>
+</div>
+
+<div class="popup-order city-order-popup">
+     <button type="button" class="close-popup-btn"></button>
+     <div class="add-city-popup">
+          <h2 class="title-popup-text">ВЫБЕРИТЕ ГОРОД</h2>
+          <ul class="list-city">
+             <li class="item-city">
+                  <a href="" class="link-popup">Москва</a>
+              </li>
+              <li class="item-city">
+                  <a href="" class="link-popup active-link-popup">Санкт-Петербург</a>
+              </li>
+               <li class="item-city">
+                  <a href="" class="link-popup">Екатеринбург</a>
+              </li>
+              <li class="item-city">
+                  <a href="" class="link-popup">Нижний Новгород</a>
+              </li>
+          </ul>
+     </div>
+</div>
 
 <script src="js/jquery-3.4.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

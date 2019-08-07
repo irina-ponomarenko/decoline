@@ -488,6 +488,36 @@
         width: 40px;
         height: 40px;
     }
+    .table-basket th, .table-basket thead th {
+        font-size: 16px;
+    }
+    .goods, .result-summa {
+        font-size: 20px;
+    }
+    .price {
+        font-size: 20px;
+    }
+    .item-form {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .info-form-input{
+        margin-top: 15px;
+        display: block;
+    }
+    .header-tabs{
+        padding: 12px 14px;
+        min-height: 73px;
+    }
+    .comment{
+        min-width: 200px;
+    }
+    .oferta{
+        padding: 16px 15px;
+    }
+    .end-order{
+        align-self: center;
+    }
 }
 @media screen and (max-width: 950px) and (min-width: 320px){
     .logo-container,
@@ -507,6 +537,62 @@
     .title-banner {
         max-width: 500px;
         font-size: 55px;
+    }
+    .container-add-info{
+        flex-direction: column;
+    }
+    .info-add,
+    .add-punkt{
+        max-width: 100%;
+    }
+    .add-punkt{
+        margin-top: 10px;
+    }
+    .tabs{
+        flex-direction: column;
+    }
+    .tabs li{
+        width: 100%;
+    }
+    .right-btn {
+        padding-left: 0;
+    }
+    .left-btn {
+        padding-right: 0;
+    }
+    .content-dostavka .input-form{
+        width: 100%;
+    }
+
+    element.style {
+    }
+    .tab-content.current {
+        display: inherit;
+    }
+    .tab-content {
+        padding: 30px;
+    }
+    .add-city-popup {
+        padding: 40px;
+    }
+    .city-order-popup {
+        min-height: 340px;
+    }
+    .info-order {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .comment {
+        width: 100%;
+        min-width: 387px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .back-btn span,
+    .next-btn span, .zakaz-btn span{
+        font-size: 16px;
     }
     .mobile-menu{
         top: 80px;
@@ -774,6 +860,20 @@
     .banner-basket{
         background-image: none;
     }
+    .punkt-order{
+        flex-direction: column;
+        max-width: 400px;
+    }
+    .map-wrapper {
+        min-width: 320px;
+        max-width: 400px;
+        width: 100%;
+        overflow: hidden;
+        height: 225px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .non-desctope{
         display: flex;
     }
@@ -908,6 +1008,20 @@
 
 }
 @media screen and (max-width: 538px) and (min-width: 320px){
+    .city-order-popup{
+        max-width: 360px;
+    }
+    .end-order{
+        font-size: 20px;
+        margin-top: 6px;
+    }
+    .oferta{
+        max-width: 100%;
+    }
+    .back-btn span,
+    .next-btn span, .zakaz-btn span{
+        font-size: 14px;
+    }
     .phone-block a {
         font-size: 16px;
         font-weight: bold;
@@ -947,6 +1061,19 @@
     }
 }
 @media screen and (max-width: 478px) and (min-width: 320px){
+    .footer-basket{
+        flex-direction: column;
+    }
+    .basket-btn:first-child {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .comment{
+        min-width: 328px;
+    }
+    .back-btn span, .next-btn span, .zakaz-btn span {
+        font-size: 16px;
+    }
     .banner{
         background-position: 61% 0;
     }
@@ -1001,10 +1128,23 @@
     .basket{
         margin-top: 0;
     }
+    .comment{
+        min-width: 331px;
+    }
+    .step-2 {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
 }
 @media screen and (max-width: 425px) and (min-width: 320px){
     .mobile-none{
         display: none;
+    }
+    .end-order {
+        font-size: 18px;
+        margin-left: 15px;
+        text-align: center;
     }
     .tovar-phone a {
         font-size: 13px;
@@ -1250,6 +1390,19 @@
     .img-circle{
         right: 0;
     }
+    .header-tabs{
+        min-height: 50px;
+    }
+    .info-add{
+        font-size: 16px;
+    }
+    .title-popup-text{
+        font-size: 17px;
+        text-align: left
+    }
+    .add-city-popup .title-popup-text{
+        text-align: center;
+    }
 }
 @media screen and (max-width: 398px) and (min-width: 320px){
     .logo {
@@ -1274,6 +1427,9 @@
         width: 26px;
         height: 26px;
     }
+    .comment {
+        min-width: 303px;
+    }
     .about-best-price{
         text-align: center;
         margin-top: 10px;
@@ -1293,6 +1449,9 @@
         max-width: 100px;
         width: 100%;
     }
+    .comment {
+        min-width: 283px;
+    }
 }
 @media screen and (max-width: 342px) and (min-width: 320px){
     .logo-container {
@@ -1309,12 +1468,24 @@
     .container-contact-block .navbar-toggler{
         margin-top: 10px;
     }
+    .comment {
+        min-width: 253px;
+    }
     .mobile-version {
         min-width: 63px;
+    }
+    .map-wrapper {
+        min-width: 314px;
     }
     .tovar-phone a {
         font-size: 10px;
         font-weight: bold;
+    }
+    .text-adress{
+        font-size: 14px;
+    }
+    .city{
+        font-size: 18px;
     }
     .mobile-version.navbar-light .navbar-nav .nav-link {
         color: rgba(0,0,0,.5);
