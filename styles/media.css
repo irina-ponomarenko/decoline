@@ -498,7 +498,8 @@
     .price {
         font-size: 20px;
     }
-    .item-form {
+    .item-form,
+    .item-form-step{
         max-width: 100%;
         margin-right: 0;
     }
@@ -964,6 +965,95 @@
         padding-top: 80px;
     }
 }
+@media screen and (max-width: 600px) {
+
+    table {
+        border: 0;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 25px;
+        display: block;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 16px;
+        border-bottom: 1px dotted #a09e9e;
+    }
+    .title-footer-table {
+        font-size: 16px;
+    }
+    .goods, .result-summa {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .container-delete{
+        display: none !important;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .articul-container, .price-tovar{
+        max-width: 100%;
+    }
+    .img-container-tovar img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .articul-title{
+        font-size: 18px;
+    }
+    .body-basket tr td {
+        vertical-align: middle;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .center-img-tovar{
+        justify-content: center !important;
+        position: relative;
+    }
+    .mobile-delete-btn{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        display: flex;
+    }
+    .table-counter .to-top,
+    .table-counter .to-bottom {
+        width: 17px;
+        height: 17px;
+    }
+    .table-counter .to-top:after, .table-counter .to-bottom:after {
+        width: 13px;
+        height: 6px;
+        left: 0px;
+    }
+    .table-counter .input-counter {
+        width: 35px;
+        font-size: 18px;
+    }
+    .img-container-tovar{
+        width: 75%;
+    }
+}
 @media screen and (max-width: 574px) and (min-width: 320px){
     .header-container-bottom {
         align-items: center;
@@ -1145,6 +1235,9 @@
 @media screen and (max-width: 425px) and (min-width: 320px){
     .mobile-none{
         display: none;
+    }
+    .step-1, .step-2 {
+        padding: 20px;
     }
     .end-order {
         font-size: 18px;
