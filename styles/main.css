@@ -2123,9 +2123,22 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-weight: 500;
 }
 .adress-punkt{
-    padding: 20px;
-    border-top: 1px solid #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     border-bottom: 1px solid #c0c0c0;
+}
+.sub-list-punkt{
+    display: none;
+}
+.active-sub-punkt{
+    border-bottom: none;
+}
+.active-sub-punkt .sub-punkt{
+    border-top: 1px solid #c0c0c0;
+}
+.sub-punkt{
+    padding: 20px 0 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -2134,11 +2147,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-weight: 700;
     color: #5b5b5b;
     font-size: 16px;
+    margin: 20px 20px 0;
 }
 .week-shedule{
     padding-left: 30px;
     position: relative;
-    margin-top: 10px;
+    margin: 10px 20px 20px;
     display: block;
 }
 .week-shedule:before{
@@ -2155,6 +2169,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .link-map{
     color: #008dd2 !important;
     font-size: 16px;
+    margin-left: 20px;
 }
 .about-punkt{
     min-width: 350px;
@@ -2165,6 +2180,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     padding-left: 40px;
     margin-top: 8px;
     display: block;
+    margin-left: 20px;
 }
 .metro:before{
     content: '';
@@ -2186,8 +2202,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 100%;
     text-align: center; 
     margin: 0 auto;
-    margin-top: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
 }
 .add-punkt-map:hover{
     transition: .3s;
@@ -2234,9 +2252,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: inline-block;
     padding: 8px;
 }
-.active-link-popup{
-     color: #008dd2 !important;
-}
+
 .list-city{
     margin: 40px 0;
 }
@@ -2307,4 +2323,11 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .order-receipt-bottom{
     padding: 30px;
+}
+.container-punkt-list{
+    border-top: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+}
+.active-sub-punkt > .sub-list-punkt{
+    display: block;
 }

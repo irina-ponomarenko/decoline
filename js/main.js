@@ -139,4 +139,8 @@ $(document).ready(function() {
         $(this).closest('body').removeClass("popap-dark");
         $(this).closest('.punkt-order').fadeOut();
     });
+
+    $(".adress-punkt").on("click", function () {
+       $(this).toggleClass("active-sub-punkt");
+    });
 });
