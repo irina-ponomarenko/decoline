@@ -1167,18 +1167,18 @@
     }
     .nav-link{
         text-align: left;
-        padding-left: 20px;
+        padding-left: 30px;
     }
     .mobile-contact .nav-item-top .phone-block,
     .mobile-contact .nav-item-top .info-call {
         text-align: left;
     }
     .mobile-contact .nav-item-top .phone-block{
-        margin-left: 20px;
+        margin-left: 30px;
     }
     .mobile-contact .nav-item-top .email{
         text-align: left;
-        margin-left: 20px;
+        margin-left: 30px;
     }
     .phone-block.tovar-phone{
         display: flex;
