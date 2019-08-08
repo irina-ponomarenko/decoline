@@ -50,6 +50,27 @@
                <ul class="mr-auto-list">
                    <li class="nav-item-mr">
                        <a href="" class="call-me">Перезвоните мне</a>
+                       <div class="popup header-call">
+                           <div class="header-popup">
+                               <h3 class="title-popup">ОБРАТНЫЙ ЗВОНОК</h3>
+                               <button type="button" class="close-popup"></button>
+                           </div>
+                           <form class="content-popup">
+                               <ul class="list-form">
+                                   <li class="item-form">
+                                       <input type="text" name="youName" class="map-input" placeholder="Имя">
+                                   </li>
+                                   <li class="item-form">
+                                       <input type="text" name="youNumber" id="phone2" class="map-input" placeholder="+7 (___) ___-__-__">
+                                   </li>
+                               </ul>
+                               <div class="custom-control custom-checkbox oferta-click">
+                                   <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                   <label class="custom-control-label" for="customCheck4">Я СОГЛАСЕН С <a href="" class="dogovor">УСЛОВИЯМИ ПУБЛИЧНОЙ ОФЕРТЫ</a> Я СОГЛАСЕН НА ОБРАБОТКУ МОИХ ПЕРСОНАЛЬНЫХ ДАННЫХ. <a href="" class="dogovor">ПОЛИТИКА.</a></label>
+                               </div>
+                               <button type="submit" class="popup-btn-form">Жду звонка</button>
+                           </form>
+                       </div>
                    </li>
                    <li class="nav-item-mr">
                        <div class="phone-block mobile-none">
@@ -1025,6 +1046,82 @@
 <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 <!-- End footer -->
 
+<div class="popup-order-click">
+    <button type="button" class="close-popup-btn"></button>
+    <h2 class="title-popup-text">ОФОРМИТЬ ЗАКАЗ</h2>
+    <form class="body-order">
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody class="body-basket">
+            <tr>
+                <td class="center-img-tovar">
+                    <button type="button" class="delete-row mobile-delete-btn"></button>
+                    <div class="img-container-tovar">
+                        <img src="image/basket-img.jpg" alt="basket-img">
+                    </div>
+                </td>
+                <td  data-label="НАИМЕНОВАНИЕ">
+                    <div class="articul-container">
+                        <h3 class="articul-title">С8463-М (FZ 26056)
+                            кнопка хром</h3>
+                        <span class="name-articul">АРТИКУЛ: <span>0388</span></span>
+                    </div>
+                </td>
+                <td data-label="ЦЕНА ЗА ЕДИНИЦУ">
+                    <div class="price-tovar">
+                        <span class="price">55 Р</span>
+                    </div>
+                </td>
+                <td data-label="КОЛИЧЕСТВО">
+                    <div class="container-counter table-counter">
+                        <div class="counter">
+                            <div class="wrapper-btn-counter">
+                                <span class="to-top"></span>
+                                <span class="to-bottom"></span>
+                            </div>
+                            <input type="text" name="number" class="input-counter" value="2">
+                        </div>
+                    </div>
+                </td>
+                <td data-label="СУММА">
+                    <div class="summa-goods">
+                        <span class="goods">110 Р</span>
+                    </div>
+                </td>
+                <td class="container-delete">
+                    <button type="button" class="delete-row"></button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="content-zayavka-popup">
+            <ul class="list-form-zayavka">
+                <li class="item-banner">
+                    <input type="text" name="name" class="input-banner" placeholder="Имя">
+                </li>
+                <li class="item-banner">
+                    <input type="text" name="phone" id="phone4" class="input-banner next-child-banner" placeholder="+7 (___) ___-____">
+                </li>
+                <li class="item-banner">
+                    <button type="submit" class="banner-btn zayavka-btn-form">Заказать</button>
+                </li>
+            </ul>
+            <div class="custom-control custom-checkbox oferta-click">
+                <input class="custom-control-input" id="customCheck5" type="checkbox">
+                <label class="custom-control-label" for="customCheck5">Я СОГЛАСЕН С <a href="" class="dogovor">УСЛОВИЯМИ ПУБЛИЧНОЙ ОФЕРТЫ</a> Я СОГЛАСЕН НА ОБРАБОТКУ МОИХ ПЕРСОНАЛЬНЫХ ДАННЫХ. <a href="" class="dogovor">ПОЛИТИКА.</a></label>
+            </div>
+        </div>
+    </form>
+</div>
 <script src="js/jquery-3.4.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

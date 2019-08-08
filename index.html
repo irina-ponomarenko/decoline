@@ -53,6 +53,27 @@
                    </li>
                    <li class="nav-item-mr">
                        <a href="" class="call-me">Перезвоните мне</a>
+                       <div class="popup header-call">
+                           <div class="header-popup">
+                               <h3 class="title-popup">ОБРАТНЫЙ ЗВОНОК</h3>
+                               <button type="button" class="close-popup"></button>
+                           </div>
+                           <form class="content-popup">
+                               <ul class="list-form">
+                                   <li class="item-form">
+                                       <input type="text" name="youName" class="map-input" placeholder="Имя">
+                                   </li>
+                                   <li class="item-form">
+                                       <input type="text" name="youNumber" id="phone2" class="map-input" placeholder="+7 (___) ___-__-__">
+                                   </li>
+                               </ul>
+                               <div class="custom-control custom-checkbox oferta-click">
+                                   <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                   <label class="custom-control-label" for="customCheck3">Я СОГЛАСЕН С <a href="" class="dogovor">УСЛОВИЯМИ ПУБЛИЧНОЙ ОФЕРТЫ</a> Я СОГЛАСЕН НА ОБРАБОТКУ МОИХ ПЕРСОНАЛЬНЫХ ДАННЫХ. <a href="" class="dogovor">ПОЛИТИКА.</a></label>
+                               </div>
+                               <button type="submit" class="popup-btn-form">Жду звонка</button>
+                           </form>
+                       </div>
                    </li>
                    <li class="nav-item-mr">
                        <div class="phone-block mobile-none">
@@ -642,6 +663,27 @@
 </footer>
 <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 <!-- End footer -->
+
+<div class="popup-info-more">
+    <button type="button" class="close-popup-btn"></button>
+    <h4 class="title-popup-header-text">Оставьте ваши контактные данные и наш менеджер
+        с радостью ответит на ваши вопросы</h4>
+    <form class="call-info-more">
+        <div class="content-zayavka">
+            <ul class="list-form-zayavka">
+                <li class="item-banner">
+                    <label for="name-call">Имя</label>
+                    <input type="text" name="name" id="name-call" class="input-banner" placeholder="Имя">
+                </li>
+                <li class="item-banner">
+                    <label for="phone5">Телефон</label>
+                    <input type="text" name="phone" id="phone5" class="input-banner next-child-banner" placeholder="+7 (___) ___-____">
+                </li>
+            </ul>
+            <button type="submit" class="banner-btn waiting-call">Жду звонка</button>
+        </div>
+    </form>
+</div>
 
 <script src="js/jquery-3.4.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

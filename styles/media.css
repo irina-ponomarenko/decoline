@@ -964,6 +964,30 @@
     .active-header {
         padding-top: 80px;
     }
+    .popup-order-click .goods, .popup-order-click .result-summa {
+        font-size: 16px;
+    }
+    .popup-order-click .articul-container, .popup-order-click .price-tovar {
+        max-width: 140px;
+    }
+    .popup-order-click .img-container-tovar img {
+        max-width: 100px;
+        width: 100%;
+    }
+    .call-info-more .list-form-zayavka{
+        flex-direction: column;
+    }
+    .call-info-more .item-banner:last-child,
+    .call-info-more .item-banner:first-child {
+        width: 80%;
+    }
+    .call-info-more .item-banner:first-child {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .title-popup-header-text{
+        max-width: 85%;
+    }
 }
 @media screen and (max-width: 600px) {
 
@@ -1053,6 +1077,39 @@
     .img-container-tovar{
         width: 75%;
     }
+    .popup-order-click .img-container-tovar img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .popup-order-click .item-banner:first-child {
+        width: 100%;
+    }
+    .popup-order-click .item-banner:nth-child(2) {
+        width: 100%;
+        margin-right: 0;
+    }
+    .popup-order-click .item-banner:last-child {
+        width: 100%;
+    }
+    .popup-order-click .banner-btn {
+        width: 100%;
+    }
+    .popup-order-click .list-form-zayavka {
+        flex-wrap: wrap;
+    }
+    .popup-order-click .next-child-banner {
+        margin-left: 0;
+    }
+    .popup-order-click .item-banner{
+        margin-bottom: 10px;
+    }
+    .popup-order-click .img-container-tovar {
+        width: 55%;
+    }
+    .popup-order-click .articul-container, .popup-order-click .price-tovar {
+        text-align: right;
+    }
+
 }
 @media screen and (max-width: 574px) and (min-width: 320px){
     .header-container-bottom {
@@ -1239,10 +1296,16 @@
     .step-1, .step-2 {
         padding: 20px;
     }
+    .popup-order-click{
+        padding: 20px;
+    }
     .end-order {
         font-size: 18px;
         margin-left: 15px;
         text-align: center;
+    }
+    .popup-order-click .goods, .popup-order-click .result-summa {
+        font-size: 18px;
     }
     .tovar-phone a {
         font-size: 13px;
@@ -1501,6 +1564,13 @@
     .add-city-popup .title-popup-text{
         text-align: center;
     }
+    .call-info-more .item-banner:last-child, .call-info-more .item-banner:first-child {
+        width: 100%;
+    }
+    .popup-order-click .title-popup-text {
+        font-size: 18px;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 398px) and (min-width: 320px){
     .logo {
@@ -1514,7 +1584,13 @@
         width: 100%;
         margin-left: 14px;
     }
-
+    .popup-order-click .img-container-tovar {
+        width: 66%;
+    }
+    .popup-order-click table tr {
+        margin-bottom: 5px;
+        display: block;
+    }
     .content-zayavka{
         padding: 10px;
     }

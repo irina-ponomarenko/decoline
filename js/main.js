@@ -13,6 +13,10 @@ $(document).ready(function() {
     /*---------------------------маска на ввод---------------*/
     $("#phone").mask("+7 (999) 999-9999");
     $("#phone1").mask("+7 (999) 999-9999");
+    $("#phone2").mask("+7 (999) 999-9999");
+    $("#phone3").mask("+7 (999) 999-9999");
+    $("#phone4").mask("+7 (999) 999-9999");
+    $("#phone5").mask("+7 (999) 999-9999");
 
     /*-----------------клик по кнопке звонка------------------*/
 
@@ -29,6 +33,10 @@ $(document).ready(function() {
             $('.popup_toggle').fadeIn(500);
         },500);
 
+    });
+    $('.call-me').on('click', function (event) {
+        event.preventDefault();
+       $(this).closest(".nav-item-mr").find(".header-call").fadeIn(500);
     });
 
     /*-----------------counter------------------*/
@@ -125,6 +133,28 @@ $(document).ready(function() {
     $('.close-popup-btn').on('click', function () {
         $(this).closest('body').removeClass("popap-dark");
        $(this).closest('.city-order-popup').fadeOut();
+    });
+
+
+    $('.add-one-click-btn').on('click', function (event) {
+        event.preventDefault();
+        $(this).closest('body').addClass("popap-dark");
+        $(this).closest('body').find(".popup-order-click").fadeIn(500);
+    });
+    $('.close-popup-btn').on('click', function () {
+        $(this).closest('body').removeClass("popap-dark");
+        $(this).closest('.popup-order-click').fadeOut();
+    });
+
+
+    $('.more-info-btn').on('click', function (event) {
+        event.preventDefault();
+        $(this).closest('body').addClass("popap-dark");
+        $(this).closest('body').find(".popup-info-more").fadeIn(500);
+    });
+    $('.close-popup-btn').on('click', function () {
+        $(this).closest('body').removeClass("popap-dark");
+        $(this).closest('.popup-info-more').fadeOut();
     });
 
     $('.add-punkt').on('click', function (event) {

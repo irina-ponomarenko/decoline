@@ -297,6 +297,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .nav-item-top{
     margin-right: 70px;
+    position: relative;
 }
 .nav-item-top:last-child{
     margin-right: 0;
@@ -383,6 +384,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .nav-item-mr{
     margin-right: 40px;
+    position: relative;
 }
 .nav-item-mr:last-child{
     margin-right: 0;
@@ -2352,4 +2354,131 @@ table th {
 }
 .mobile-delete-btn{
     display: none;
+}
+.header-call{
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
+.popup-order-click{
+    background-color: #ffffff;
+    padding: 35px;
+    position: fixed;
+    z-index: 1000000;
+    top: 50%;
+    transform: translateY(-50%)translateX(-50%);
+    left: 50%;
+    display: none;
+    max-width: 740px;
+    width: 100%;
+}
+.popup-order-click .articul-title,
+.popup-order-click .name-articul, .popup-order-click .name-articul span{
+    font-size: 14px;
+}
+.popup-order-click .price{
+    font-size: 18px;
+}
+.popup-order-click .articul-container, .popup-order-click .price-tovar{
+    text-align: left;
+    max-width: 170px;
+}
+.content-zayavka-popup{
+    margin-top: 20px;
+}
+.popup-order-click .banner-btn{
+    width: 140px;
+    margin-top: 0;
+}
+.popup-order-click .item-banner:last-child {
+    width: auto;
+}
+.popup-order-click .item-banner:first-child {
+    width: 40%;
+}
+.popup-order-click .goods, .popup-order-click .result-summa {
+    font-size: 20px;
+}
+.popup-order-click .item-banner:nth-child(2){
+    width: 38%;
+    margin-right: 40px;
+}
+.popup-order-click .oferta-click {
+    max-width: 100%;
+    margin-top: 10px;
+}
+.popup-order-click .oferta-click .dogovor,
+.popup-order-click .oferta-click .custom-control-label{
+    font-size: 11px;
+}
+.popup-order-click .oferta-click .custom-control-label::before, .popup-order-click .oferta-click .custom-control-label::after {
+    width: 1rem;
+    height: 1rem;
+    left: -2rem;
+}
+.popup-order-click table tr:first-child{
+    border-top: none;
+}
+.popup-order-click .list-form-zayavka {
+    justify-content: space-between;
+}
+.popup-info-more{
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    padding: 25px;
+    position: fixed;
+    z-index: 1000000;
+    top: 50%;
+    transform: translateY(-50%)translateX(-50%);
+    left: 50%;
+    max-width: 740px;
+    width: 100%;
+    display: none;
+}
+.title-popup-header-text{
+    font-size: 18px;
+    text-align: center;
+    max-width: 70%;
+    font-weight: 500;
+    margin: 0 auto;
+}
+.call-info-more{
+    margin-top: 30px;
+}
+.call-info-more .content-zayavka{
+    text-align: center;
+    background-color: transparent;
+}
+.waiting-call{
+    width: 155px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(161,161,161,1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(161,161,161,1);
+    box-shadow: 0px 0px 6px 0px rgba(161,161,161,1);
+    margin-top: 35px;
+}
+.waiting-call:hover,
+.zayavka-btn-form:hover{
+    border: 2px solid #008dd2;
+    background-color: #008dd2;
+    transition: .3s;
+    color: #ffffff;
+}
+.zayavka-btn-form{
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(161,161,161,1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(161,161,161,1);
+    box-shadow: 0px 0px 6px 0px rgba(161,161,161,1);
+}
+.call-info-more .item-banner{
+    display: flex;
+    align-items: center;
+}
+.call-info-more .item-banner label{
+    margin-right: 15px;
+}
+.call-info-more .item-banner:first-child{
+    margin-right: 35px;
+}
+.call-info-more .next-child-banner {
+    margin-left: 0;
 }
