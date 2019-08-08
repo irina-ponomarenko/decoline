@@ -812,6 +812,13 @@
     .video-block{
         margin: 0;
     }
+    .comment{
+        width: 100%;
+        min-width: 100%;
+    }
+    .you-comment{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 766px) and (min-width: 320px){
     .green-block{
@@ -1069,9 +1076,6 @@
         margin-right: 0;
         margin-bottom: 10px;
     }
-    .comment{
-        min-width: 328px;
-    }
     .back-btn span, .next-btn span, .zakaz-btn span {
         font-size: 16px;
     }
@@ -1131,9 +1135,6 @@
     }
     .basket{
         margin-top: 0;
-    }
-    .comment{
-        min-width: 331px;
     }
     .step-2 {
         padding-right: 20px;
@@ -1414,6 +1415,7 @@
         width: 100%;
     }
 }
+
 @media screen and (max-width: 375px) and (min-width: 320px){
     .next-child-banner {
         width: 100%;
@@ -1430,9 +1432,6 @@
     .basket-icon {
         width: 26px;
         height: 26px;
-    }
-    .comment {
-        min-width: 303px;
     }
     .about-best-price{
         text-align: center;
@@ -1452,9 +1451,6 @@
     .logo {
         max-width: 100px;
         width: 100%;
-    }
-    .comment {
-        min-width: 283px;
     }
 }
 @media screen and (max-width: 342px) and (min-width: 320px){
