@@ -439,10 +439,10 @@
         text-align: center;
         color: #008ed5 !important;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 22px;
     }
     .navbar-list-mob{
-        padding: 20px 0;
+        padding: 35px 0;
         border-top: 1px solid #a1a1a1;
         border-bottom: 1px solid #a1a1a1;
     }
@@ -484,7 +484,8 @@
     }
     .close-btn{
         background: url("../image/close-btn.png")no-repeat;
-        background-size: contain;
+        background-size: 65% 65%;
+        background-position: center;
         width: 40px;
         height: 40px;
     }
@@ -1099,7 +1100,7 @@
         width: 100%;
     }
     .phone-block a {
-        font-size: 18px;
+        font-size: 26px;
         font-weight: bold;
     }
     .basket-block{
@@ -1114,8 +1115,11 @@
         font-size: 10px;
     }
     .info-call {
-        font-size: 11px;
+        font-size: 16px;
         color: #999898;
+    }
+    .mobile-contact .nav-item-top .email{
+        font-size: 22px;
     }
 }
 @media screen and (max-width: 448px) and (min-width: 320px){
