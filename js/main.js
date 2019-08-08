@@ -141,6 +141,8 @@ $(document).ready(function() {
     });
 
     $(".adress-punkt").on("click", function () {
-       $(this).toggleClass("active-sub-punkt");
+        $(this).closest('.list-punkt').find(".adress-punkt").removeClass("active-sub-punkt");
+       $(this).addClass("active-sub-punkt");
+
     });
 });
