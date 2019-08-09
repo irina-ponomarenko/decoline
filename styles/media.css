@@ -1020,7 +1020,7 @@
         font-size: 16px;
         font-weight: bold;
     }
-    .basket-footer tr td:first-child{
+    .basket-footer tr th:first-child{
         display: none;
     }
     .goods, .result-summa {
