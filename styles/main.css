@@ -1708,6 +1708,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background: url("../image/delete.png")no-repeat;
     background-size: 100% 100%;
     border: none;
+    flex: none;
 }
 .delete-row:hover{
     background: url("../image/delete-nav.png")no-repeat;
@@ -2365,7 +2366,7 @@ table th {
 }
 .popup-order-click{
     background-color: #ffffff;
-    padding: 35px;
+    padding: 35px 45px;
     position: fixed;
     z-index: 1000000;
     top: 50%;

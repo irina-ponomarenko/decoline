@@ -1006,7 +1006,7 @@
     }
 
     table tr {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         display: block;
     }
 
@@ -1017,11 +1017,14 @@
         border-bottom: 1px dotted #a09e9e;
     }
     .title-footer-table {
-        font-size: 16px;
+        font-size: 17px;
         font-weight: bold;
     }
     .basket-footer tr th:first-child{
         display: none;
+    }
+    .basket-footer tr th:nth-child(2){
+        text-align: left;
     }
     .goods, .result-summa {
         font-size: 20px;
