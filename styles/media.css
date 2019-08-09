@@ -1616,6 +1616,9 @@
     .content-zayavka-popup .input-banner{
         border: 1px solid #ebebeb;
     }
+    .input-banner{
+        padding: 12px 15px;
+    }
 }
 @media screen and (max-width: 398px) and (min-width: 320px){
     .logo {
