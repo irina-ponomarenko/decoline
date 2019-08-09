@@ -886,6 +886,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 12px;
     height: 12px;
     opacity: 0.8;
+    flex: none;
+    display: block;
 }
 .close-popup:hover{
     transition: .3s;
@@ -1066,6 +1068,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    border: 1px solid #ebebeb;
 }
 .item-form{
     margin-bottom: 12px;
@@ -1238,18 +1241,18 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     height: 54px;
     padding: 10px;
     border-radius: 100%;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(121,123,124,1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(121,123,124,1);
-    box-shadow: 0px 0px 5px 0px rgba(121,123,124,1);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(121,123,124,0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(121,123,124,0.5);
+    box-shadow: 0px 0px 5px 0px rgba(121,123,124,0.5);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .basket-block:hover{
     transition: .3s;
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,141,210,1);
-    -moz-box-shadow: 0px 0px 7px 0px rgba(0,141,210,1);
-    box-shadow: 0px 0px 7px 0px rgba(0,141,210,1);
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,141,210,0.5);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0,141,210,0.5);
+    box-shadow: 0px 0px 7px 0px rgba(0,141,210,0.5);
     }
 .basket{
     display: flex;
@@ -2481,4 +2484,13 @@ table th {
 }
 .call-info-more .next-child-banner {
     margin-left: 0;
+}
+.add-variant-city{
+    display: flex;
+    align-items: center;
+}
+.add-variant-city h4{
+    margin-right: 15px;
+    color: #888787;
+    font-size: 18px;
 }

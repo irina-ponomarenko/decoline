@@ -169,24 +169,24 @@
         line-height: normal;
         font-size: 18px;
     }
-    .new-price{
-        font-size: 22px;
+    .new-price {
+        font-size: 24px;
     }
-    .input-counter{
-        width: 30px;
-        font-size: 14px;
+    .input-counter {
+        width: 37px;
+        font-size: 18px;
     }
     .old-price {
-        font-size: 13px;
+        font-size: 15px;
     }
-    .to-top, .to-bottom{
-        width: 12px;
-        height: 12px;
+    .to-top, .to-bottom {
+        width: 20px;
+        height: 20px;
     }
-    .to-top:after, .to-bottom:after{
-        width: 9px;
-        height: 4px;
-        left: 0px;
+    .to-top:after, .to-bottom:after {
+        width: 15px;
+        height: 6px;
+        left: 1px;
     }
     .container-block-tovar{
         min-width: 186px;
@@ -820,6 +820,10 @@
     .you-comment{
         width: 100%;
     }
+    .custom-control-label::after,
+    .oferta-click .custom-control-label::before, .oferta-click .custom-control-label::after{
+        top: 0;
+    }
 }
 @media screen and (max-width: 766px) and (min-width: 320px){
     .green-block{
@@ -1014,9 +1018,13 @@
     }
     .title-footer-table {
         font-size: 16px;
+        font-weight: bold;
+    }
+    .basket-footer tr td:first-child{
+        display: none;
     }
     .goods, .result-summa {
-        font-size: 18px;
+        font-size: 20px;
         white-space: nowrap;
     }
     .container-delete{
@@ -1059,20 +1067,35 @@
         right: 15px;
         top: 15px;
         display: flex;
+        flex: none;
     }
     .table-counter .to-top,
     .table-counter .to-bottom {
-        width: 17px;
-        height: 17px;
+        width: 24px;
+        height: 24px;
     }
     .table-counter .to-top:after, .table-counter .to-bottom:after {
-        width: 13px;
-        height: 6px;
-        left: 0px;
+        width: 18px;
+        height: 9px;
+        left: 2px;
+    }
+    .to-top:after, .to-bottom:after{
+        top: 5px;
+    }
+    .to-bottom:after {
+        transform: rotate(180deg);
+        top: 6px;
     }
     .table-counter .input-counter {
-        width: 35px;
-        font-size: 18px;
+        width: 45px;
+        font-size: 25px;
+    }
+    .table-counter .input-counter {
+        width: 43px;
+        font-size: 21px;
+    }
+    .price {
+        font-size: 23px;
     }
     .img-container-tovar{
         width: 75%;
@@ -1101,7 +1124,7 @@
         margin-left: 0;
     }
     .popup-order-click .item-banner{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     .popup-order-click .img-container-tovar {
         width: 55%;
@@ -1311,6 +1334,14 @@
         font-size: 13px;
         font-weight: bold;
         white-space: nowrap;
+    }
+    .add-variant-city{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .add-variant-city h4 {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
     .mr-auto-list{
         margin-top: 6px;
@@ -1565,11 +1596,22 @@
         text-align: center;
     }
     .call-info-more .item-banner:last-child, .call-info-more .item-banner:first-child {
-        width: 100%;
+        width: auto;
+    }
+    .call-info-more .list-form-zayavka{
+        align-items: flex-end;
     }
     .popup-order-click .title-popup-text {
         font-size: 18px;
         text-align: center;
+    }
+    .call-info-more .next-child-banner,
+    .call-info-more .input-banner{
+        width: 220px;
+        border: 1px solid #ebebeb;
+    }
+    .content-zayavka-popup .input-banner{
+        border: 1px solid #ebebeb;
     }
 }
 @media screen and (max-width: 398px) and (min-width: 320px){
